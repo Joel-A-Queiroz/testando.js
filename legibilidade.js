@@ -68,3 +68,19 @@ cliques++;
 cliques++;
 
 console.log('O botão foi clicado: ' + cliques +  'vezes')
+
+//Operação matemática:
+
+const numeroUm = 8
+
+const numeroDois = 8
+
+const soma = numeroUm + numeroDois
+
+console.log('Resultado da soma: ', soma)
+
+const multipicacao = numeroUm * numeroDois
+console.log('Resultado da multiplicação é:', multipicacao)
+
+const resto = 12 % 2
+console.log('Resto da operação: ', resto)
