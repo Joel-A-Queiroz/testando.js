@@ -12,59 +12,151 @@
 
 // Verificação de maioridade:
 
-let idade = 18
-let maiorDeIdade = idade >= 18
+//let idade = 18
+//let maiorDeIdade = idade >= 18
 
 
-console.log("É maior de idade? ", maiorDeIdade);
+//console.log("É maior de idade? ", maiorDeIdade);
 
 // Verificação de nota:
 
-let portugues = 10
-let matematica = 4
-let media = (portugues + matematica)/2
+//let portugues = 10
+//let matematica = 4
+//let media = (portugues + matematica)/2
 
-console.log('Média: ', media);
+//console.log('Média: ', media);
 
-let passouDeAno = media >=7
-console.log('Passou de ano? ', passouDeAno);
+//let passouDeAno = media >=7
+//console.log('Passou de ano? ', passouDeAno);
 
 //Simulação troco:
 
-let valorCompra = 35.90
-let valorPago = 50
+//let valorCompra = 35.90
+//let valorPago = 50
 
-console.log('Valor compra:R$ ', valorCompra)
-console.log('Valor Pago: R$ ', valorPago)
+//console.log('Valor compra:R$ ', valorCompra)
+//console.log('Valor Pago: R$ ', valorPago)
 
-let valorTroco = valorPago - valorCompra
+//let valorTroco = valorPago - valorCompra
 
-console.log('Valor do troco é: R$ ', valorTroco)
+//console.log('Valor do troco é: R$ ', valorTroco)
 
 // Verificação de senha:
 
-const senhaPrimeiro = 1234
-const senhaSegundo = 1233
+//const senhaPrimeiro = 1234
+//const senhaSegundo = 1233
 
-console.log('A senha é igual?: ', senhaPrimeiro == senhaSegundo);
+//console.log('A senha é igual?: ', senhaPrimeiro == senhaSegundo);
 
 //Validação de faltas:
 
-let totalAulas = 100
-let totalFaltas = 24
+//let totalAulas = 100
+//let totalFaltas = 24
 
-let porcentagemDefaltas = totalFaltas / totalAulas *100
+//let porcentagemDefaltas = totalFaltas / totalAulas *100
 
-console.log('Porcentagem: ', porcentagemDefaltas)
+//let aprovado = porcentagemDefaltas < 25
 
-let aprovado = porcentagemDefaltas < 25
-
-console.log('Aprovado?: ', aprovado);
+//console.log('Aprovado?: ', aprovado);
 
 //Verificação de login:
 
-let temLogin = true
-let temSenha = true
+//let temLogin = true
+//let temSenha = true
 
-console.log('Tem login e senha? ', temLogin && temSenha);
+//console.log('Tem login e senha? ', //temLogin && temSenha);
+
+// Desafio de estruturas de decisão
+
+
+const idade = 17
+
+if (idade >=18) {console.log('Pode comprar bebida')
+
+} else {console.log('Venda proibida para menores de 18 anos')}
+
+//Horario atual
+
+let horaAtual = 13
+
+
+if (horaAtual>= 6 && horaAtual <12) {console.log('Bom dia!')
+
+} else if (horaAtual >= 13 && horaAtual < 18){console.log('Boa tarde"')
+
+} else {console.log('Boa noite!')}
+
+//Verificação de numero positivo ou negativo
+
+const numero = 500
+
+if (numero >0) {console.log('numero positivo')
+
+} else if (numero <0){console.log('Numero negativo')
+
+} else {console.log('Numero é zero')}
+
+//Conversor de nota em conceito
+
+let nota = 5
+
+if (nota >= 9) {console.log('A');
+
+} else if (nota >= 8) {console.log('B');
+
+} else if (nota >= 6) {console.log('C');
+
+} else if (nota >= 4) {console.log('D');
+
+} else {console.log('E');
+
+}
+
+//Par ou impar com ternario
+
+let numero2 = 7;
+
+let resultado = (numero2 % 5 === 0) ? 'Par' : 'Impar';
+console.log('O numero é: ', resultado )
+
+//Menu com switch-case
+
+let opcoes = 1
+
+switch (opcoes) {
+    case 1:
+    console.log("Cadastrar")
+    break;
+    
+    case 2:
+        console.log("Listar")
+        break;
+     case 3:
+        console.log("Sair")
+        break;
+        default: 
+
+console.log("Opção inválida"); 
+
+break; 
+}
+
+//Validação de e-mail
+
+let email = "joel.queiroz"
+
+if (email === "") {console.log('Preencha o campo de e-mail')
+
+} else {console.log("E-mail válido")
+
+}
+
+// validação de senha:
+
+let senha = 'jqt057#'
+let senhaValida = false
+
+if (senhaValida) {console.log('Senha válida') 
+
+} else {console.log('Senha muito curta')}
 
