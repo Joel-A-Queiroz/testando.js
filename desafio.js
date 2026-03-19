@@ -69,94 +69,121 @@
 // Desafio de estruturas de decisão
 
 
-const idade = 17
+// const idade = 17
 
-if (idade >=18) {console.log('Pode comprar bebida')
+// if (idade >=18) {console.log('Pode comprar bebida')
 
-} else {console.log('Venda proibida para menores de 18 anos')}
+// } else {console.log('Venda proibida para menores de 18 anos')}
 
-//Horario atual
+// //Horario atual
 
-let horaAtual = 13
+// let horaAtual = 13
 
 
-if (horaAtual>= 6 && horaAtual <12) {console.log('Bom dia!')
+// if (horaAtual>= 6 && horaAtual <12) {console.log('Bom dia!')
 
-} else if (horaAtual >= 13 && horaAtual < 18){console.log('Boa tarde"')
+// } else if (horaAtual >= 13 && horaAtual < 18){console.log('Boa tarde"')
 
-} else {console.log('Boa noite!')}
+// } else {console.log('Boa noite!')}
 
-//Verificação de numero positivo ou negativo
+// //Verificação de numero positivo ou negativo
 
-const numero = 500
+// const numero = 500
 
-if (numero >0) {console.log('numero positivo')
+// if (numero >0) {console.log('numero positivo')
 
-} else if (numero <0){console.log('Numero negativo')
+// } else if (numero <0){console.log('Numero negativo')
 
-} else {console.log('Numero é zero')}
+// } else {console.log('Numero é zero')}
 
-//Conversor de nota em conceito
 
-let nota = 5
 
-if (nota >= 9) {console.log('A');
 
-} else if (nota >= 8) {console.log('B');
+// //Conversor de nota em conceito
 
-} else if (nota >= 6) {console.log('C');
+// let nota = 5
 
-} else if (nota >= 4) {console.log('D');
+// if (nota >= 9) {console.log('A');
 
-} else {console.log('E');
+// } else if (nota >= 8) {console.log('B');
 
-}
+// } else if (nota >= 6) {console.log('C');
 
-//Par ou impar com ternario
+// } else if (nota >= 4) {console.log('D');
 
-let numero2 = 7;
+// } else {console.log('E');
 
-let resultado = (numero2 % 5 === 0) ? 'Par' : 'Impar';
-console.log('O numero é: ', resultado )
+// }
+
+
+
+
+
+// //Par ou impar com ternario
+
+// let numero2 = 7;
+
+// let resultado = (numero2 % 5 === 0) ? 'Par' : 'Impar';
+// console.log('O numero é: ', resultado )
+
+
+
 
 //Menu com switch-case
 
-let opcoes = 1
+// let opcoes = 1
 
-switch (opcoes) {
-    case 1:
-    console.log("Cadastrar")
-    break;
+// switch (opcoes) {
+//     case 1:
+//     console.log("Cadastrar")
+//     break;
     
-    case 2:
-        console.log("Listar")
-        break;
-     case 3:
-        console.log("Sair")
-        break;
-        default: 
+//     case 2:
+//         console.log("Listar")
+//         break;
+//      case 3:
+//         console.log("Sair")
+//         break;
+//         default: 
 
-console.log("Opção inválida"); 
+// console.log("Opção inválida"); 
 
-break; 
+// break; 
+// }
+
+// //Validação de e-mail
+
+// let email = "joel.queiroz"
+
+// if (email === "") {console.log('Preencha o campo de e-mail')
+
+// } else {console.log("E-mail válido")
+
+// }
+
+// // validação de senha:
+
+// let senha = 'jqt057#'
+// let senhaValida = false
+
+// if (senhaValida) {console.log('Senha válida') 
+
+// } else {console.log('Senha muito curta')}
+
+
+
+//Laços de repetição
+
+let par = 0
+let impar = 0
+
+for (let contador = 0; contador <= 100; contador++) {
+   
+    if(contador % 2 == 0) {
+        par++
+    } else {impar++}
+    
 }
 
-//Validação de e-mail
-
-let email = "joel.queiroz"
-
-if (email === "") {console.log('Preencha o campo de e-mail')
-
-} else {console.log("E-mail válido")
-
-}
-
-// validação de senha:
-
-let senha = 'jqt057#'
-let senhaValida = false
-
-if (senhaValida) {console.log('Senha válida') 
-
-} else {console.log('Senha muito curta')}
-
+console.log('Total de numero pares: ', par)
+console.log('Total de numero impares: ', impar)
