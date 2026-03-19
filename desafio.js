@@ -174,16 +174,47 @@
 
 //Laços de repetição
 
-let par = 0
-let impar = 0
+ let par = 0
+ let impar = 0
+ 
 
-for (let contador = 0; contador <= 100; contador++) {
+// for (let contador = 0; contador <= 100; contador++) {
    
-    if(contador % 2 == 0) {
-        par++
-    } else {impar++}
+//     if(contador % 2 == 0) {
+//         par++
+//     } else {impar++}
     
-}
+// }
 
-console.log('Total de numero pares: ', par)
-console.log('Total de numero impares: ', impar)
+// console.log('Total de numero pares: ', par)
+// console.log('Total de numero impares: ', impar)
+
+
+//////////////////////////////////////////
+
+for(let contador = 0; contador <=10; contador++) {console.log('Numero atual: ', contador)}
+
+//////////////////////////////////////////
+
+let numero = 1
+let soma = 0
+
+while(numero <=100){soma += numero; numero++} console.log('O total da soma é: ', soma)
+
+///////////////////////////////////////
+
+let numeroTabuada = 7; 
+
+for (let i = 1; i <= 10; i++) { 
+
+console.log(numeroTabuada + " x " + i + " = " + (numeroTabuada * i)); 
+
+} 
+
+//////////////////////////////////////////////
+
+
+//for (;;) { console.log('Laço infinito!'); } 
+
+
+
