@@ -14,19 +14,19 @@ const frutas = ['Uva', 'Maça', 'Pessego', 'banana', 'abacate']
 
 // console.log('Depois de remover: ', frutas)
 
-// for (let i = 0; i < frutas.length; i++) {
-//     console.log('Indice: ', i)
-//     console.log(frutas[i])
-// }
+for (let i = 0; i < frutas.length; i++) {
+    console.log('Indice: ', i)
+    console.log(frutas[i])
+}
 
-// console.log('Usando forEach')
+console.log('Usando forEach')
 
-// frutas.forEach((valor, indice) => {
-//     console.log('indice:', indice, valor)
-// })
+frutas.forEach((valor, indice) => {
+    console.log('indice:', indice, valor)
+})
 
 console.log('Usando for of')
 
 for (const fruta of frutas) {
-    console.log('Fruta da vez: ', fruta)
+    console.log('Fruta da vez: ', frutas)
 }
