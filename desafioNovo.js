@@ -1,67 +1,67 @@
- const readline = require ('readline')
+// const readline = require('readline')
 
- const leitor = readline.createInterface({
-   input: process.stdin,
-   output: process.stdout,
- });
+// const leitor = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
- console.log("Boas vindas ao quiz do Javascript!");
- console.log("Responda corretamente entre A,B ou C\n");
+// console.log("Boas vindas ao quiz do Javascript!");
+// console.log("Responda corretamente entre A,B ou C\n");
 
- let acertos = 0;
+// let acertos = 0;
 
- leitor.question(
-   "1) Qual palavra usamos para criar uma função?\n (a) define\n (b) function\n (c) create\n>",
-   (resposta1) => {
-     if (resposta1 == "b") {
-       acertos++;
-     }
+// leitor.question(
+//   "1) Qual palavra usamos para criar uma função?\n (a) define\n (b) function\n (c) create\n>",
+//   (resposta1) => {
+//     if (resposta1 == "b") {
+//       acertos++;
+//     }
 
-     leitor.question(
-       "Qual dessas é uma estrutura de repetição?\n (a) loopar\n (b) repeat\n (c) for\n> ",
-       (resposta2) => {
-         if (resposta2 == "c") {
-           acertos++;
-         }
+//     leitor.question(
+//       "Qual dessas é uma estrutura de repetição?\n (a) loopar\n (b) repeat\n (c) for\n> ",
+//       (resposta2) => {
+//         if (resposta2 == "c") {
+//           acertos++;
+//         }
 
-         leitor.question(
-           'Qual valor é considerado falsy em Javascript?\n (a) 1\n (b) 0\n (c) "texto"\n> ',
-           (resposta3) => {
-             if (resposta3 == "b") {
-               acertos++;
-             }
+//         leitor.question(
+//           'Qual valor é considerado falsy em Javascript?\n (a) 1\n (b) 0\n (c) "texto"\n> ',
+//           (resposta3) => {
+//             if (resposta3 == "b") {
+//               acertos++;
+//             }
 
 
-             if (acertos == 3) {
-                 console.log('Parabéns! Você acertou todas as perguntas')
-             } else if (acertos == 2){
-                 console.log('Parabéns, continue assim!')
-             } else if(acertos == 1){
-                 console.log('Bom, mas continue praticando.')
-             } else {console.log('Infelizmente você errou, mas continue praticando')}
+//             if (acertos == 3) {
+//               console.log('Parabéns! Você acertou todas as perguntas')
+//             } else if (acertos == 2) {
+//               console.log('Parabéns, continue assim!')
+//             } else if (acertos == 1) {
+//               console.log('Bom, mas continue praticando.')
+//             } else { console.log('Infelizmente você errou, mas continue praticando') }
 
-             leitor.close();
-           },
-         );
-       },
-     );
-   },
- );
+//             leitor.close();
+//           },
+//         );
+//       },
+//     );
+//   },
+// );
 
-const nomes = ['Geraldo', 'Valeria', 'Pedro', 'Joel']
+// const nomes = ['Geraldo', 'Valeria', 'Pedro', 'Joel']
 
-console.log('Nomes da minha familia: ', nomes.length)
+// console.log('Nomes da minha familia: ', nomes.length)
 
-for (let nome = 0; nome < nomes.length; nome++) {
-  console.log('Nomes: ', nome)
-  console.log(nomes[nome])
-}
+// for (let nome = 0; nome < nomes.length; nome++) {
+//   console.log('Nomes: ', nome)
+//   console.log(nomes[nome])
+// }
 
-nomes.push('Giselle')
+// nomes.push('Giselle')
 
-nomes.splice(1, 1);
+// nomes.splice(1, 1);
 
-console.log('Quantidade de nomes depois do exercicio: ', nomes.length)
+// console.log('Quantidade de nomes depois do exercicio: ', nomes.length)
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -84,22 +84,62 @@ console.log('Total da soma', + soma)
 // 
 
 
-let notas = [8,6,6,10]
+let notas = [8, 6, 6, 10]
 
- let somaNotas = 0;
+let somaNotas = 0;
 
- for(nota of notas ) {
+for (nota of notas) {
   somaNotas += nota;
- }
+}
 
- let media = somaNotas / notas.length
+let media = somaNotas / notas.length
 
- if(media >= 7){
+if (media >= 7) {
   console.log('Aprovado', media)
- } else {console.log('Reprovado: ', media)}
+} else { console.log('Reprovado: ', media) }
 
- /////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
 
- //Desafio 5:
+// DESAFIO COM METODOS:
 
- 
+let pessoa = {
+  Nome: 'Joel',
+  Idade: 28,
+  Profissão: 'Técnico de enfermagem'
+}
+
+console.log('Esse sou eu: ', pessoa)
+
+//////////////////////////////////////////////////////////////////////////////
+
+console.log('Nome: ', pessoa.Nome)
+
+///////////////////////////////////////////////////////////////////////////////
+
+pessoa.idade = 29
+
+console.log('Nova idade: ', pessoa.idade)
+
+//////////////////////////////////////////////////////////////////////////////
+
+pessoa.cidade = 'São Paulo'
+
+console.log('Depois de adicionar cidade: ', pessoa.cidade);
+
+////////////////////////////////////////////////////////////////////////////
+
+const eu = {
+  nome: 'Joel',
+  idade: 28,
+  profissao: 'Técnico de enfermagem'
+}
+
+function apresentacao(e) {
+  return 'Olá, meu nome é: ' + e.nome +
+    ', tenho: ' + e.idade +
+    ' anos e sou: ' + e.profissao + '.'
+}
+
+console.log(apresentacao(eu));
+
+
