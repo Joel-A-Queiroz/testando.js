@@ -18,8 +18,8 @@ leitor.question('Qual é o seu nome? ', (nome) => {
             acertos++
         }
 
-        leitor.question('Em qual continente fica a China?\n (a) Asiatico\n (b) Europeu\n (c) Americano\n>', (resposta2) => {
-            if (resposta2 == 'a') {
+        leitor.question('Em qual continente fica o Panamá?\n (a) Asiatico\n (b) Europeu\n (c) Americano\n>', (resposta2) => {
+            if (resposta2 == 'c') {
                 acertos++
             }
 
@@ -28,31 +28,39 @@ leitor.question('Qual é o seu nome? ', (nome) => {
                     acertos++
                 }
 
-                leitor.question('Qual foi o unico clube brasileiro a representar a seleção brasileira?\n (a) São Paulo\n (b) Corinthians\n (c) Palmeiras\n>', (resposta4) => {
+                leitor.question('No velho testamento, quem foi o homem mais sábio de Jerusalem?\n (a) Davi\n (b) Jeremias\n (c) Salomao\n>', (resposta4) => {
                     if (resposta4 == 'c') {
                         acertos++
                     }
 
 
+                    leitor.question('Em qual pais a queda de um muro marcou o fim da segunda guerra mundial?\n (a) Suiça\n (b) França\n (c) Belgica\n (d) Alemanha\n>', (resposta5) => {
+                        if (resposta5 == 'd') {
+                            acertos++
+                        }
 
 
-                    if (acertos == 4) {
-                        console.log('Parabéns, você gabaritou')
-                    } else if (acertos == 3) {
-                        console.log('Muito bem, continue assim!')
-                    } else if (acertos = 2) {
-                        console.log('Da pra melhorar, estude mais')
-                    } else { console.log('Estude mais cabeção') }
 
-                    leitor.close();
+
+
+                        if (acertos == 5) {
+                            console.log('Parabéns, você gabaritou')
+                        } else if (acertos == 4) {
+                            console.log('Muito bem, continue assim!')
+                        } else if (acertos = 3) {
+                            console.log('Da pra melhorar, estude mais')
+                        } else { console.log('Estude mais cabeção') }
+
+                        leitor.close();
+                    })
                 })
-            })
 
 
+            }
+            )
         }
         )
-    }
-    )
+    })
 })
 
 
