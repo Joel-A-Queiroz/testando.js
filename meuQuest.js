@@ -5,7 +5,7 @@ const leitor = readline.createInterface({
     output: process.stdout
 })
 
-const nomes = ['Pedro', 'Valeria', 'Geraldo', 'Giselle']
+const nomes = ['Pedro', 'Valeria', 'Geraldo', 'Giselle', 'Joel']
 
 let acertos = 0
 
@@ -205,45 +205,65 @@ leitor.question('Olá jogador!\n Qual é o seu nome?\n>', (nome) => {
         })
     }
 
-    else if (nome != nomes) {
-        leitor.question('No principio era o verbo, e o verbo estava com Deus, e o verbo era Deus\n João 1:1\n A quem esse trecho descrito na biblia se refere?\n (a) Jesus\n (b) Maria\n (c) João\n (d) Moises\n>', (respostaDiversa1) => {
-            if (respostaDiversa1 == 'a') {
-                acertos++
-            }
+     else if (nome != nomes) {
+         leitor.question('No principio era o verbo, e o verbo estava com Deus, e o verbo era Deus\n João 1:1\n A quem esse trecho descrito na biblia se refere?\n (a) Jesus\n (b) Maria\n (c) João\n (d) Moises\n>', (respostaDiversa1) => {
+             if (respostaDiversa1 == 'a') {
+                 acertos++
+             }
 
-            leitor.question('Quantos continentes existem no mundo?\n (a) 5\n (b) 6\n (c) 7\n (d) 4\n>', (respostaDiversa2) => {
-                if (respostaDiversa2 == 'b') {
-                    acertos++
-                }
+             leitor.question('Quantos continentes existem no mundo?\n (a) 5\n (b) 6\n (c) 7\n (d) 4\n>', (respostaDiversa2) => {
+                 if (respostaDiversa2 == 'b') {
+                     acertos++
+                 }
 
-                leitor.question('Qual foi o primeiro animal enviado ao espaço?\n (a) Cachorro\n (b) Macaco\n (c) Mosca\n (d) Camaleão\n>', (respostaDiversa3) => {
-                    if (respostaDiversa3 == 'a') {
-                        acertos++
-                    }
+                 leitor.question('Qual foi o primeiro animal enviado ao espaço?\n (a) Cachorro\n (b) Macaco\n (c) Mosca\n (d) Camaleão\n>', (respostaDiversa3) => {
+                     if (respostaDiversa3 == 'a') {
+                         acertos++
+                     }
 
-                    leitor.question('Quais são os Paises que representam a sigla do bloco economico BRICS?\n (a) Brunei, Russia, China, Sudão\n (b) Butão, Russia, Chile, Somalia\n (c) Brasil, Russia, India, China, Africa do Sul\n (d) Brasil, Russia, India, Chile, Singapura\n>', (respostaDiversa4) => {
-                        if (respostaDiversa4 == 'c') {
-                            acertos++
-                        }
+                     leitor.question('Quais são os Paises que representam a sigla do bloco economico BRICS?\n (a) Brunei, Russia, China, Sudão\n (b) Butão, Russia, Chile, Somalia\n (c) Brasil, Russia, India, China, Africa do Sul\n (d) Brasil, Russia, India, Chile, Singapura\n>', (respostaDiversa4) => {
+                         if (respostaDiversa4 == 'c') {
+                             acertos++
+                         }
 
-                        leitor.question('Quem foi Paulo Freire?\n (a) Biologo e empresário\n (b) Arquiteto que projetou Brasilia\n (c) Fisico ganhador do Nobel da Paz\n (d) Educador e Filósofo Brasileiro\n>', (respostaDiversa5) => {
-                            if (respostaDiversa5 == 'd') {
-                                acertos++
-                            }
+                         leitor.question('Quem foi Paulo Freire?\n (a) Biologo e empresário\n (b) Arquiteto que projetou Brasilia\n (c) Fisico ganhador do Nobel da Paz\n (d) Educador e Filósofo Brasileiro\n>', (respostaDiversa5) => {
+                             if (respostaDiversa5 == 'd') {
+                                 acertos++
+                             }
 
-                            leitor.question('Qual o satelite natural da terra?\n (a) Marte\n (b) Lua\n (c) Jupiter\n (d) Galaxia de Andromeda\n>', (respostaDiversa6) => {
-                                if (respostaDiversa6 == 'b') {
-                                    acertos++
-                                }
+                             leitor.question('Qual o satelite natural da terra?\n (a) Marte\n (b) Lua\n (c) Jupiter\n (d) Galaxia de Andromeda\n>', (respostaDiversa6) => {
+                                 if (respostaDiversa6 == 'b') {
+                                     acertos++
+                                 }
 
-                                console.log('Obrigado por participar, você acertou:', [acertos])
-                                leitor.close
-                            })
-                        })
-                    })
-                })
-            })
-        })
-    }
+                                 console.log('Obrigado por participar, você acertou:', [acertos])
+                                 leitor.close()
+                             })
+                         })
+                     })
+                 })
+             })
+         })
+     }
+
+
+    //Teste da giselle:
+
+    // else if (nome == 'Joel') {
+    //     leitor.question('Qual sua cor preferida?\n (a) verde\n (b) preto', (respostaJoel1) => {
+    //         if (respostaJoel1 == 'a') {
+    //             acertos++
+    //         }
+
+    //         leitor.question("Qual o nome de nossa galaxia?\n (a) Andromeda\n (b) Via Lactea\n (c) Sombreiro\n (d) Eliptica\n R: ", (respostaJoel2) => {
+    //             if (respostaJoel2.toLowerCase() === 'b') {
+    //                 console.log("Parabéns! Você acertou.");
+    //             } else {
+    //                 console.log("Resposta incorreta.");
+    //             }
+                
+    //         });
+    //     })
+    // }
 
 })
